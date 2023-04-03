@@ -221,6 +221,8 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  padding: 0;
+  margin: 0;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
@@ -248,12 +250,14 @@ body {
   height: 10rem;
   padding: 1rem;
   padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background: linear-gradient(to left, #f0f0f0 97%, #4e4e4e 80%, #be1f1f 90%, rgba(3, 46, 64, 0.7921568627) 5%);
+  background: linear-gradient(to left, #f0f0f0 97%, #4e4e4e 80%, #be1f1f 90%, rgba(255, 113, 113, 0.7921568627) 5%);
   border-radius: 8px;
-  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.329);
+  box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.329);
 }
 .main-content .projs-container .projs .proj-box h3 {
   font-family: Roboto, Helvetica, sans-serif;
@@ -281,6 +285,7 @@ body {
 .main-content .projs-container .projs .proj-box .icon-container img {
   width: 20px;
   height: auto;
+  transition-duration: 0.2s;
 }
 .main-content .projs-container .projs .proj-box .icon-container img:hover {
   width: 23px;
@@ -309,7 +314,6 @@ body {
   overflow: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-bottom: 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -341,12 +345,52 @@ body {
   width: 80%;
   height: 35%;
   background-color: #f0f0f0;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin-top: 1rem;
   border-radius: 10px;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.329);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-content .news-container .trending .trend-box {
+  padding: 0;
+}
+.main-content .news-container .trending .trend-box .info {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main-content .news-container .trending .trend-box .info span {
+  font-size: 14px;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.main-content .news-container .trending .trend-box .info p {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  color: grey;
+}
+.main-content .news-container .trending .trend-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  zoom: 80%;
+  padding: 0;
+}
+.main-content .news-container .trending .trend-box #arrow {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  filter: invert(80%);
+  transition-duration: 0.15s;
+}
+.main-content .news-container .trending .trend-box #arrow:hover {
+  filter: invert(20%);
 }
 
 /*# sourceMappingURL=output.css.map */

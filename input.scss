@@ -254,6 +254,8 @@ body {
     flex-direction: row;
     gap: 1rem;
 
+    padding: 0;
+    margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 2rem;
@@ -274,6 +276,8 @@ body {
             width: 100%;
             height: 100%;
 
+
+
             margin-top: 1rem;
 
             .proj-box{
@@ -281,14 +285,16 @@ body {
                 height: 10rem;
                 padding: 1rem;
                 padding-left: 1.5rem;
+                padding-bottom: .5rem;
+                margin-bottom: 1rem;
 
                 display: flex;
                 flex-direction: column;
                 gap: .5rem;
                 
-                background: linear-gradient(to left, #f0f0f0 97%,#4e4e4e 80%,#be1f1f 90%,#032e40ca 5%);
+                background: linear-gradient(to left, #f0f0f0 97%,#4e4e4e 80%,#be1f1f 90%,#ff7171ca 5%);
                 border-radius: 8px;
-                box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.329);
+                box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.329);
 
                 h3 {
                     font-family: $font-stack;
@@ -319,6 +325,7 @@ body {
                     img {
                         width: 20px;
                         height: auto;
+                        transition-duration: .2s;
                     }
                     img:hover{
                         width: 23px;
@@ -355,7 +362,7 @@ body {
 
             padding-left: 1.5rem;
             padding-right: 1.5rem;
-            padding-bottom: 1rem;
+            // padding-bottom: 1rem;
 
             margin-top: 1rem;
             margin-bottom: 2rem;
@@ -401,12 +408,61 @@ body {
             width: 80%;
             height: 35%;
             background-color: #f0f0f0;
-            padding-top: 1rem;
+
+            padding-top: .5rem;
+            padding-bottom: 0;
             padding-left: 1.5rem;
             padding-right: 1.5rem;
+
             margin-top: 1rem;
+
             border-radius: 10px;
             box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.329);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .trend-box {
+                padding: 0;
+                .info {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1.5rem;
+
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    span {
+                        font-size: 14px;
+                        font-family: $font-stack;
+                    }
+                    p {
+                        font-family: $font-stack;
+                        font-size: 12px;
+                        color: grey;
+                    }
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    zoom: 80%;
+                    padding: 0;
+                }
+                #arrow {
+                    width: 40px;
+                    height: 40px;
+                    margin-left: auto;        
+                    filter: invert(80%);  
+                    transition-duration: .15s;      
+                }
+
+                #arrow:hover {
+                    filter: invert(20%);
+                }
+
+            }
         }
     }
 }
