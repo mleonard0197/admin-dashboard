@@ -17,7 +17,7 @@ body {
     display: grid;
     grid-template-columns: .75fr 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: rgb(237, 144, 31);
+    background-color: rgb(255, 255, 255);
     // border: 2px solid red;
 }
 
@@ -252,18 +252,161 @@ body {
     background-color: #c6dce8;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 2rem;
 
     .projs-container {
-        width: 80%;
-        height: auto;
+        width: 70%;
+        height: 90%;
         span {
             font-family: $font-stack;
             font-weight: 500;
             font-size: 20px;
+        }
+        .projs {
+            display: flex;
+            flex-flow: row wrap;
+            overflow: auto;
+            gap: 1rem;
+            width: 100%;
+            height: 100%;
+
+            margin-top: 1rem;
+
+            .proj-box{
+                width: 43%;
+                height: 10rem;
+                padding: 1rem;
+                padding-left: 1.5rem;
+
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                
+                background: linear-gradient(to left, #f0f0f0 97%,#4e4e4e 80%,#be1f1f 90%,#032e40ca 5%);
+                border-radius: 8px;
+                box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.329);
+
+                h3 {
+                    font-family: $font-stack;
+                }
+
+                p {
+                    font-family: $font-stack;
+                    font-size: 14px;
+                    height: 6rem;
+                    color: #535353;
+                }
+                
+                .icon-container {
+                    display: flex;
+                    
+                    gap: .75rem;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .img-box {
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: auto;
+                    }
+                    img:hover{
+                        width: 23px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .news-container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        span {
+            font-family: $font-stack;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .announcements {
+            width: 80%;
+            height: 35%;
+            background-color: #f0f0f0;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            list-style: none;
+            overflow: auto;
+
+
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 1rem;
+
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+
+            border-radius: 10px;
+            box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.329);
+            
+
+            .flex-item {
+                flex: 1 1 auto;
+                // background: red;
+                position: relative;
+                display: flex;
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .flex-item + .flex-item {
+                border-top: solid 1px rgb(54, 54, 54);
+            }
+
+            h3 {
+                font-family: $font-stack;
+                font-size: 14px;
+                padding-bottom: .25rem;
+            }
+            
+            p {
+                font-family: $font-stack;
+                font-size: 10px;
+                // padding-bottom: 1rem;
+                color: #535353;
+
+            }
+
+        }
+
+        .trending {
+            width: 80%;
+            height: 35%;
+            background-color: #f0f0f0;
+            padding-top: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            margin-top: 1rem;
+            border-radius: 10px;
+            box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.329);
         }
     }
 }
