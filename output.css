@@ -257,7 +257,7 @@ body {
   gap: 0.5rem;
   background: linear-gradient(to left, #f0f0f0 97%, #4e4e4e 80%, #be1f1f 90%, rgba(255, 113, 113, 0.7921568627) 5%);
   border-radius: 8px;
-  box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.329);
+  box-shadow: 0px 5px 2px 1px rgba(0, 0, 0, 0.283);
 }
 .main-content .projs-container .projs .proj-box h3 {
   font-family: Roboto, Helvetica, sans-serif;
